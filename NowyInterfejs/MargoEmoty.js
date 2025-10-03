@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MargoEmoty
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  Podmienia emotikony w czacie Margonem na GIFy, zachowując poprawny HTML i historię wiadomości.
 // @author       MRK (Markenzo)
 // @match        https://*.margonem.pl/
@@ -10,6 +10,8 @@
 // @exclude      https://www.margonem.com/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=margonem.pl
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/MRKZML/MargoAddons/refs/heads/main/NowyInterfejs/MargoEmoty.js
+// @updateURL    https://raw.githubusercontent.com/MRKZML/MargoAddons/refs/heads/main/NowyInterfejs/MargoEmoty.js
 // ==/UserScript==
 
 (function() {
