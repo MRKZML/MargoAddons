@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MargoEmoty
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Podmienia emotikony w czacie Margonem na GIFy, zachowując poprawny HTML i historię wiadomości.
 // @author       MRK (Markenzo)
 // @match        https://*.margonem.pl/
@@ -37,7 +37,7 @@
         let szHTML = elSpan.innerHTML;
 
         arrEmotes.forEach(([szKey, szImg]) => {
-            const objRegex = new RegExp(`(?<!<[^>]*)${EscapeRegExp(szKey)}(?![^<]*>)`, 'g');
+            const objRegex = new RegExp(`(?<!<[^>]*)${EscapeRegExp(szKey)}\\b(?![^<]*>)`, 'g');
             szHTML = szHTML.replace(objRegex, `<img src="https://micc.garmory-cdn.cloud/obrazki/emots/${szImg}.gif" style="height: 13px;">`);
         });
 
